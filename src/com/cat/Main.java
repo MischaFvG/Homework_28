@@ -3,12 +3,12 @@ package com.cat;
 import java.util.Scanner;
 
 public class Main {
+    private static final int M = 4;
+    private static final int K = 4;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int m = 4;
-        int k = 4;
-        int[][] array = new int[m + 2][k + 2];
+        int[][] array = new int[M + 2][K + 2];
         for (int i = 1; i < array.length - 1; i++) {
             for (int j = 1; j < array[i].length - 1; j++) {
                 System.out.print("Enter " + i + j + " element : ");
